@@ -1,0 +1,36 @@
+{
+    "author": "Chiitoi",
+    "dependencies": {
+        "dotenv": "^16.0.3"
+    },
+    "devDependencies": {
+        "@typescript-eslint/eslint-plugin": "^5.55.0",
+        "@typescript-eslint/parser": "^5.55.0",
+        "eslint": "^8.36.0",
+        "rimraf": "^4.4.0",
+        "typescript": "^5.0.1-rc"
+    },
+    "engines": {
+        "node": ">=18"
+    },
+    "imports": {
+        "#config": "./dist/config.js",
+        "#lib/*": "./dist/lib/*/index.js"
+    },
+    "license": "MIT",
+    "main": "dist/index.js",
+    "name": "tori",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Chiitoi/Tori.git"
+    },
+    "scripts": {
+        "build": "npx tsc -b",
+        "clean": "rimraf dist",
+        "clean-build": "npm run clean && npm run build",
+        "dev": "npm run build && clear && npm run start",
+        "lint": "npx eslint \"src/*\" --fix --ext .ts",
+        "start": "node -r dotenv/config dist/index.js"
+    },
+    "type": "module"
+}

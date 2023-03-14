@@ -1,0 +1,49 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        "allowSyntheticDefaultImports": true,
+		"allowUnreachableCode": false,
+		"allowUnusedLabels": false,
+        "alwaysStrict": true,
+        "declaration": true,
+        "declarationMap": true,
+        "emitDecoratorMetadata": true,
+        "esModuleInterop": true,
+        "exactOptionalPropertyTypes": false,
+        "experimentalDecorators": true,
+        "forceConsistentCasingInFileNames": true,
+        "importHelpers": true,
+        "incremental": true,
+        "lib": [
+            "ESNext"
+        ],
+        "module": "ESNext",
+        "moduleResolution": "node",
+        "newLine": "lf",
+        "noEmitHelpers": true,
+        "noFallthroughCasesInSwitch": true,
+		"noImplicitReturns": true,
+        "noImplicitOverride": true,
+		"noUnusedLocals": false,
+		"noUnusedParameters": true,
+        "outDir": "dist",
+        "paths": {
+            "#config": [
+                "./src/config"
+            ],
+            "#lib/*": [
+                "./src/lib/*/index"
+            ]
+        },
+		"preserveConstEnums": true,
+		"pretty": true,
+		"removeComments": false,
+		"resolveJsonModule": true,
+		"sourceMap": true,
+		"strict": true,
+        "strictNullChecks": false,
+        "target": "ESNext",
+        "useDefineForClassFields": true,
+        // "verbatimModuleSyntax": true
+    }
+}
